@@ -1,0 +1,11 @@
+.shoeList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1 1 33.3%; 
+    box-sizing: border-box;
+    padding: 10px; 
+    max-width: 33.3%;
+  }

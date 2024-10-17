@@ -1,0 +1,128 @@
+
+<nav class="navbar sticky-top bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-center">
+        <img class="img-fluid" style="max-width: 150px;" src="../../../assets/page-img/logo.png" alt="logo">
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+       <h1 class="title">Join in our Community</h1>
+    </div>
+</nav>
+
+<div class="container">
+        <div class="card p-3">
+            <form #registerForm="ngForm" (ngSubmit)="onSubsribe(registerForm)">
+
+              <h4>Profile Information</h4>
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" [(ngModel)]="profile.username" required >
+                <!--bella merda-->
+              </div>
+            
+              <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" name="password" [(ngModel)]="profile.password">
+              <div class="form-text error-message "
+                >Phone field is required</div>
+                </div>
+        
+              <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" ngModel> 
+              </div>
+               
+               
+               <!-- <h4>Personal Information</h4>
+                <div class="mb-3">
+                    <label for="name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="name" name="name" ngModel required>
+                    <div 
+                    *ngIf="registerForm.controls.name?.errors?.required && registerForm.controls.name.touched" 
+                    class="form-text error-message "
+                    > Name field is required</div>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label" >Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" ngModel required >
+                    <div *ngIf="registerForm.controls.lastName?.errors?.required && registerForm.controls.lastName.touched" 
+                    class="form-text error-message "
+                    > Last name field is required</div>
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" name="email" ngModel required>
+                    <div 
+                    *ngIf="registerForm.controls.email?.errors?.required && registerForm.controls.email.touched"
+                    class="form-text error-message "
+                    >email field is required </div>
+                  </div>
+              
+                  <div class="mb-3">
+                    <label for="phoneOne" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phoneOne" name="phoneOne" ngModel  required>
+                    <div 
+                    *ngIf="registerForm.controls.phoneOne?.errors?.required && registerForm.controls.phoneOne.touched"
+                    class="form-text error-message "
+                    >Phone field is required</div>
+                  </div>
+                  <div class="mb-3 ">
+                    <label for="phoneTwo" class="form-label">Secondary Phone </label>
+                    <input type="text" class="form-control" id="phoneTwo" name="phoneTwo" ngModel placeholder="(Optional)" >
+                  </div>-->
+                  <app-button-confirm type="submit" [text]="'conferma'"></app-button-confirm>
+                  
+                  
+             
+
+              
+               <!-- 
+                
+               
+                    <h4>Address Information</h4>
+                  <div formArrayName="addressList">
+                    <div>
+                        <app-addresses></app-addresses>
+
+                    </div>
+
+                  </div>
+               
+               
+               
+               <h4>Address List</h4>
+                  <div formArrayName="addressList" >
+                    <div [ class="border p-3 mb-3">
+                      <div class="mb-3">
+                        <label for="street" class="form-label">Street</label>
+                        <input type="text" class="form-control" id="street" formControlName="street">
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="number" class="form-label">Number</label>
+                        <input type="text" class="form-control" id="number" formControlName="number">
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" formControlName="city">
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="province" class="form-label">Province</label>
+                        <input type="text" class="form-control" id="province" formControlName="province">
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="postalCode" class="form-label">Postal Code</label>
+                        <input type="text" class="form-control" id="postalCode" formControlName="postalCode">
+                      </div>
+                    </div>
+                  </div>--> 
+
+              
+            </form>
+        </div>
+</div>
+

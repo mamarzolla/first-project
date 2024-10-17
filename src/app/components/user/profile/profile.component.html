@@ -1,0 +1,26 @@
+
+     <div ngModelGroup="profile">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" [(ngModel)]="profile.username" required >
+            <!--bella merda-->
+        </div>
+        
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="profile.password">
+        <div 
+            
+            class="form-text error-message "
+            >Phone field is required</div>
+        </div>
+    
+        <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" ngModel> 
+        </div>
+
+</div>
+            
+
+<!-- *ngIf="profileForm.controls.phoneOne?.errors?.required && profileForm.controls.phoneOne.touched"-->

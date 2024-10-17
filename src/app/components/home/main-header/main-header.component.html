@@ -1,0 +1,68 @@
+<nav class="navbar sticky-top bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="d-flex flex align-items-end ms-auto">
+            <a href="#" class="nav-link px-3 border-end border-dark">Trova un negozio</a>
+            <a href="#" class="nav-link px-3 border-end border-dark ">Aiuto</a>
+            <a [routerLink]="['/newUser']" class="nav-link px-3 border-end border-dark">Unisciti a noi</a>
+            <a [routerLink]="['/login']" class="nav-link px-3">Accedi</a>
+          </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <img class="img-fluid" style="max-width: 150px;" src="../../../assets/page-img/logo.png" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center w-100">
+              <li class="nav-item">
+                <a class="aa nav-link active fs-4" aria-current="page" [routerLink]="['/']">Home</a>
+              </li>
+              <!-- Dropdown Features -->
+              <li class="nav-item dropdown">
+                <a class="nav-link fs-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">In evidenza</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item"  [routerLink]="['/home/new']">Nuovi Arrivi</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/home/best_seller']">Best Seller</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link fs-4" href="#" id="navbarDropdown" role="button" aria-expanded="false">Scopri lo sport</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" [routerLink]="['/home/categories','Running']">Running</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/home/categories','Basket']">Basket</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/home/categories','Trail Running']">Trail Running</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/home/categories','Training']">Training</a></li>
+                  <li><a class="dropdown-item" [routerLink]="['/home/categories','Sneakers']">Sneakers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          
+          <form class="d-flex align-items-center searchForm" role="search">
+            <!-- Input di ricerca con lente -->
+            <li class="searchContainer">
+              <input class="form-control form-control-sm" type="search" placeholder="Cerca" aria-label="Search" (input)="onType($event)">
+                <img class="imgLens " src="../../../assets/page-img/search.png" alt="search">
+            </li>
+  
+            <!-- Due bottoni aggiuntivi con dropdown -->
+            <div class="custom-buttons ms-3">
+              <div class="dropdownButton">
+                <button class="searchButton"> <img class="imgCart" src="../../../assets/page-img/shopping-bag.png" alt="search"></button>
+                <div class="dropdownContent">
+                  <a href="#">Option 1</a>
+                  <a href="#">Option 2</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </div>
+  

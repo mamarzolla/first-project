@@ -1,0 +1,11 @@
+
+
+  <div class="card">
+    <img src='http://localhost:8080/shoe/{{shoe.image}}' class="card-img-top" alt="{{ shoe.name }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ shoe.name }}</h5>
+      <p class="card-text">Rating: {{ shoe.rating }} / 5</p>
+      <p>Price: {{ shoe.price | currency }}</p>
+      <app-button-confirm [text]="'Dettaglio Scarpa'" (click)="switchOnProductId()" />
+    </div>
+  </div>

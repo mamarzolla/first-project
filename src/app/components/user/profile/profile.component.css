@@ -1,0 +1,16 @@
+input.ng-touched.ng-invalid{
+    border: solid 2px red;
+}
+.error-message{
+    color: red;
+}
+.form-control {
+    margin-left: 0.5em;
+}
+.form-label{
+    margin-left: 1em;
+}
+.form-text{
+    margin-left: 1em;
+
+}

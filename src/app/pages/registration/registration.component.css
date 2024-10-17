@@ -1,0 +1,40 @@
+input.ng-touched.ng-invalid{
+    border: solid 2px red;
+}
+.error-message{
+    color: red;
+}
+.form-control {
+    margin-left: 0.5em;
+}
+.form-label{
+    margin-left: 1em;
+}
+.form-text{
+    margin-left: 1em;
+
+}
+h4{
+    padding:1.2em 0;
+}
+/* .mb-3{
+    position: relative;
+} */
+/* .form-label{
+    position: absolute;
+    top: .5em;
+    left: 1em;
+    transition: all 0.3s ease;
+  font-size: 16px;
+  color: grey;
+  pointer-events: none; /* Evita che il label interferisca con il click sull'input 
+
+}
+
+input:focus + .form-label,
+input:not(:placeholder-shown) + .form-label {
+  top: -15px;
+  left: 10px;
+  font-size: 12px;
+  color: black;
+} */

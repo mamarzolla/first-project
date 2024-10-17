@@ -1,0 +1,12 @@
+.filtroPrezzo{
+    display: none;
+    height: 50px;
+    background-color: black;
+}
+#prezzo:checked ~ .filtroPrezzo{
+    display: block;
+}
+
+#prezzo{
+    display: none;
+}

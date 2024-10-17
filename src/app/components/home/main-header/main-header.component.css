@@ -1,0 +1,100 @@
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    min-width: 15em;
+    transform: translateX(-20%);
+    position: absolute;
+    z-index: 999; /* Fa sì che il dropdown sia al di sopra di tutti gli altri contenuti */
+  }
+  
+  /* Aggiungi una transizione per un effetto più fluido */
+  .dropdown-menu {
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .searchButton{
+    border: none;
+    background: none;
+    margin-bottom: .3em;
+  }
+  .form-control{
+    max-height: 55px;
+  }
+  
+  img{
+    max-height: 70px;
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+  }
+  
+  /* Rimuovi la freccia del dropdown */
+  .nav-item a.nav-link {
+    cursor: pointer;
+  }
+  .searchContainer {
+    position: relative;
+}
+
+.searchContainer img {
+    position: absolute;
+    left: 8px; 
+    top: 50%; 
+    transform: translateY(-50%);
+  
+}
+.searchContainer input {
+    padding-left: 30px; /* Per evitare che il testo si sovrapponga all'immagine */
+    width: 100%;
+    padding-top:.4em;
+    padding-bottom:.4em;
+}
+.imgLens{
+    min-width: 15px;
+    margin-top: .7em;
+}
+
+.imgCart{
+    max-width: 28px;
+}
+.custom-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btnCustom {
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 17em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transform: translateX(-80%)
+  }
+  
+  .dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdownButton:hover .dropdownContent {
+    display: block;
+  }
+
+  .aa{
+    margin-left: 2em;;
+  }
+
+  .dropdown-item{
+    padding-left: 40%;
+  }
